@@ -1,0 +1,38 @@
+#home {
+  position: relative;
+  min-height: 400px;
+  height: 43vw;
+  width: 100%;
+}
+
+#video-overlay {
+  position: absolute;
+  padding-top: 10%;
+  width: 100%;
+  z-index: 100;
+  backface-visibility: hidden;
+}
+
+#profile-picture {
+  animation: dropDown 1s ease-out;
+}
+
+#video-heading {
+  margin-top: 30px;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px rgba(66, 65, 65, 0.507);
+}
+
+#resume-button {
+  margin-top: 80px;
+  text-align: center;
+}
+
+#video-container {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100;
+}

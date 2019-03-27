@@ -1,0 +1,9 @@
+#card-group {
+  padding: 0 100px;
+}
+
+@media (max-width: 767px) {
+  #card-group {
+    padding: 14px 100px;
+  }
+}

@@ -1,0 +1,17 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-modal {
+  animation: fade 250ms linear;
+}
+
+.ui.card,
+.ui.cards > .card {
+  border-radius: 0px;
+}
