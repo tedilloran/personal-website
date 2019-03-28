@@ -9,7 +9,7 @@ class ContactButtons extends React.Component {
         <Header as='h2' textAlign='center' style={{ textShadow: '2px 2px rgba(66, 65, 65, 0.507)' }}>
           CONTACT
         </Header>
-        <Grid stackable columns={3} style={{ height: '200px', padding: '50px 100px' }}>
+        <Grid stackable columns={3} style={{ height: '100%', padding: '10px 100px' }}>
           <Grid.Row>
             <Grid.Column>
               <div style={{ textAlign: 'center' }}>

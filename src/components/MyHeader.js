@@ -5,18 +5,15 @@ import '../styles/header.css';
 
 class MyHeader extends React.Component {
   render() {
-    const vidPath = process.env.PUBLIC_URL + '/assets/videos/video.mp4';
+    const vidPath = process.env.PUBLIC_URL + '/assets/videos/video1.mp4';
+    const profilePath = process.env.PUBLIC_URL + '/assets/pictures/profile.jpg';
+    const cat =
+      'https://cdn.vox-cdn.com/thumbor/0A5RYJ7J5eW5wepSfIBR3KVmoSg=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13648705/olli_the_polite_cat.jpg';
 
     return (
-      <div id='home'>
+      <div id='header'>
         <div id='video-overlay'>
-          <Image
-            id='profile-picture'
-            circular
-            centered
-            size={'small'}
-            src='https://cdn.vox-cdn.com/thumbor/0A5RYJ7J5eW5wepSfIBR3KVmoSg=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13648705/olli_the_polite_cat.jpg'
-          />
+          <Image id='profile-picture' circular centered size={'small'} src={profilePath} />
           <div id='video-heading'>
             <Header as='h1' textAlign='center' inverted style={{ animation: 'moveInRight 1s ease-out' }}>
               TRENT EDILLORAN
@@ -35,9 +32,12 @@ class MyHeader extends React.Component {
               VIEW RESUMÉ
             </Button>
           </div>
+          <div id='scroll-arrow'>
+            <Icon name='angle double down' inverted size={'huge'} />
+          </div>
         </div>
         <div id='video-container'>
-          <video playsInline loop autoPlay muted>
+          <video playsInline loop autoPlay muted style={{ width: '100%' }}>
             <source src={vidPath} type='video/mp4' />
             <source src={vidPath} type='video/webm' />
           </video>
