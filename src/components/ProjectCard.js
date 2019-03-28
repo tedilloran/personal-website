@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Card, Image, Icon, Button } from 'semantic-ui-react';
+import { Card, Image, Icon } from 'semantic-ui-react';
 
 import '../styles/projectCard.css';
 
