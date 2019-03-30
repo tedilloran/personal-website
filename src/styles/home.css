@@ -19,3 +19,9 @@ body {
   padding: 20px 100px;
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  #intro {
+    margin: 0;
+  }
+}

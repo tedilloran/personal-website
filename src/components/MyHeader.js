@@ -16,10 +16,10 @@ class MyHeader extends React.Component {
           <Image id='profile-picture' circular centered size={'small'} src={profilePath} />
           <div id='video-heading'>
             <Header as='h1' textAlign='center' inverted style={{ animation: 'moveInRight 1s ease-out' }}>
-              TRENT EDILLORAN
+              <span id='name'>TRENT EDILLORAN</span>
             </Header>
             <Header as='h1' textAlign='center' inverted style={{ animation: 'moveInLeft 1s ease-out' }}>
-              QUALITY ASSURANCE INTERN
+              <span id='title'>QUALITY ASSURANCE INTERN</span>
             </Header>
           </div>
           <div id='resume-button'>
