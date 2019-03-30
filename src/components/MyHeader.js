@@ -13,27 +13,26 @@ class MyHeader extends React.Component {
     return (
       <div id='header'>
         <div id='video-overlay'>
-          <Image id='profile-picture' circular centered size={'small'} src={profilePath} />
+          <div id='profile-picture'>
+            <Image circular centered size={'small'} src={profilePath} />
+          </div>
           <div id='video-heading'>
-            <Header as='h1' textAlign='center' inverted style={{ animation: 'moveInRight 1s ease-out' }}>
+            <Header as='div' textAlign='center' inverted style={{ animation: 'moveInRight 1s ease-out' }}>
               <span id='name'>TRENT EDILLORAN</span>
             </Header>
-            <Header as='h1' textAlign='center' inverted style={{ animation: 'moveInLeft 1s ease-out' }}>
+            <Header as='div' textAlign='center' inverted style={{ animation: 'moveInLeft 1s ease-out' }}>
               <span id='title'>QUALITY ASSURANCE INTERN</span>
             </Header>
-          </div>
-          <div id='resume-button'>
-            <Button
-              color={'blue'}
-              size={'huge'}
-              href={process.env.PUBLIC_URL + '/assets/documents/resume.pdf'}
-              download>
-              <Icon name='file alternate' />
-              VIEW RESUMÉ
-            </Button>
-          </div>
-          <div id='scroll-arrow'>
-            <Icon name='angle double down' inverted size={'huge'} />
+            <div id='resume-button'>
+              <Button
+                color={'blue'}
+                size={'huge'}
+                href={process.env.PUBLIC_URL + '/assets/documents/resume.pdf'}
+                download>
+                <Icon name='file alternate' />
+                VIEW RESUMÉ
+              </Button>
+            </div>
           </div>
         </div>
         <div id='video-container'>
@@ -41,6 +40,9 @@ class MyHeader extends React.Component {
             <source src={vidPath} type='video/mp4' />
             <source src={vidPath} type='video/webm' />
           </video>
+        </div>
+        <div id='scroll-arrow'>
+          <Icon name='angle double down' inverted size={'huge'} />
         </div>
       </div>
     );

@@ -23,13 +23,14 @@ body {
 @media only screen and (max-width: 600px) {
   #intro {
     margin: 0;
+    padding: 20px 40px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   #intro {
     margin: 0;
-    padding: 0 30px;
+    padding: 0 1em;
     font-size: 12px;
   }
 }

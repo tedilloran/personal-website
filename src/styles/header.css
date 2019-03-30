@@ -59,12 +59,12 @@
   top: 0;
   height: 100%;
   width: 100%;
-  padding-top: 10%;
   z-index: 100;
   backface-visibility: hidden;
 }
 
 #profile-picture {
+  margin-top: 10%;
   animation: dropDown 1s ease-out;
 }
 
@@ -96,27 +96,26 @@
   z-index: -100;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   #header {
-    min-height: 330px;
-    height: 330px;
-  }
-  #profile-picture {
-    display: block;
-    float: left;
-    transform: scale(0.75);
-    margin-left: 30px;
+    height: 400px;
   }
 
-  #profile-picture:after {
-    content: "";
-    display: table;
-    clear: both;
+  #video-overlay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15% 5%;
+  }
+
+  #profile-picture {
+    flex-grow: 1;
+    margin: 0;
   }
 
   #video-heading {
-    display: block;
-    margin-right: 30px;
+    flex-grow: 1;
+    margin: 0;
   }
 
   #video-heading h1 {
@@ -128,12 +127,7 @@
   }
 
   #title {
-    font-size: 16px;
-  }
-
-  #resume-button {
-    margin: 20px 0 0 0;
-    transform: scale(0.75);
+    font-size: 20px;
   }
 
   #resume-button a {
@@ -144,7 +138,63 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
+  #header {
+    min-height: 330px;
+    height: 330px;
+  }
+
+  #video-overlay {
+    padding: 10% 5%;
+  }
+
+  #profile-picture {
+    transform: scale(0.75);
+  }
+
+  #name {
+    font-size: 24px;
+  }
+
+  #title {
+    font-size: 20px;
+  }
+
+  #resume-button {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #profile-picture {
+    transform: scale(0.60);
+  }
+
+  #video-heading {
+    margin: 30px 20px 0 0;
+    letter-spacing: 3px;
+  }
+
+  #video-heading h1 {
+    line-height: normal;
+    font-size: 16px;
+  }
+
+  #resume-button {
+    margin: 0;
+    transform: scale(0.6);
+  }
+
+  #resume-button a {
+    margin: 0;
+  }
+
+  #scroll-arrow {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   #video-overlay {
     padding: 0;
   }
@@ -157,19 +207,13 @@
   #profile-picture {
     display: block;
     float: left;
-    transform: scale(0.50);
+    transform: scale(0.60);
     margin: 0;
-  }
-
-  #profile-picture:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 
   #video-heading {
     display: block;
-    margin: 30px 20px 0 0;
+    margin: 5% 0 0 0;
     letter-spacing: 3px;
   }
 
@@ -177,23 +221,32 @@
     line-height: normal;
   }
 
+  #video-heading div {
+    margin: 0;
+  }
+
   #name {
-    font-size: 10px;
-    line-height: 0;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 1px;
   }
 
   #title {
     font-size: 10px;
+    line-height: normal;
+    letter-spacing: 1px;
   }
 
   #resume-button {
+    font-size: 10px;
     margin: 0;
-    transform: scale(0.4) translate(-215px, -80px);
+    transform: scale(0.6);
   }
 
   #resume-button a {
     margin: 0;
   }
+
   #scroll-arrow {
     visibility: hidden;
   }
