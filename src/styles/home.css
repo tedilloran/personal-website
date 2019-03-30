@@ -25,3 +25,11 @@ body {
     margin: 0;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  #intro {
+    margin: 0;
+    padding: 0 30px;
+    font-size: 12px;
+  }
+}

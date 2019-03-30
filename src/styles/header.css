@@ -143,3 +143,58 @@
     visibility: hidden;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  #video-overlay {
+    padding: 0;
+  }
+
+  #header {
+    min-height: 160px;
+    height: 160px;
+  }
+
+  #profile-picture {
+    display: block;
+    float: left;
+    transform: scale(0.50);
+    margin: 0;
+  }
+
+  #profile-picture:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #video-heading {
+    display: block;
+    margin: 30px 20px 0 0;
+    letter-spacing: 3px;
+  }
+
+  #video-heading h1 {
+    line-height: normal;
+  }
+
+  #name {
+    font-size: 10px;
+    line-height: 0;
+  }
+
+  #title {
+    font-size: 10px;
+  }
+
+  #resume-button {
+    margin: 0;
+    transform: scale(0.4) translate(-215px, -80px);
+  }
+
+  #resume-button a {
+    margin: 0;
+  }
+  #scroll-arrow {
+    visibility: hidden;
+  }
+}

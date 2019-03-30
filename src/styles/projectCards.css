@@ -2,8 +2,14 @@
   padding: 0 100px;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   #card-group {
     padding: 14px 100px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #card-group {
+    padding: 5px;
   }
 }

@@ -1,0 +1,10 @@
+#button-group {
+  height: 100%;
+  padding: 10px 100px;
+}
+
+@media only screen and (max-width: 320px) {
+  #button-group {
+    padding: 0;
+  }
+}
