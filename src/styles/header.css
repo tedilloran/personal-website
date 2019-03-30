@@ -154,6 +154,11 @@ video {
   #title {
     font-size: 18px;
   }
+
+  #resume-button a {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -179,15 +184,6 @@ video {
   #title {
     font-size: 16px;
   }
-
-  #resume-button {
-    margin: 0;
-    transform: scale(0.6);
-  }
-
-  #resume-button a {
-    margin: 0;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -205,18 +201,14 @@ video {
   }
 
   #name {
-    font-size: 12px;
-    line-height: normal;
     letter-spacing: 1px;
   }
 
   #title {
-    font-size: 10px;
-    line-height: normal;
     letter-spacing: 1px;
   }
 
-  #resume-button {
+  #resume-button a {
     font-size: 10px;
   }
 

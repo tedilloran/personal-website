@@ -27,8 +27,10 @@ class MyHeader extends React.Component {
                 size={'huge'}
                 href={process.env.PUBLIC_URL + '/assets/documents/resume.pdf'}
                 download>
-                <Icon name='file alternate' />
-                VIEW RESUMÉ
+                <div style={{ display: 'inline-block' }}>
+                  <Icon name='file alternate' />
+                </div>
+                <div style={{ display: 'inline-block' }}>VIEW RESUMÉ</div>
               </Button>
             </div>
           </div>
