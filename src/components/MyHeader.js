@@ -7,11 +7,9 @@ class MyHeader extends React.Component {
   render() {
     const vidPath = process.env.PUBLIC_URL + '/assets/videos/video1.mp4';
     const profilePath = process.env.PUBLIC_URL + '/assets/pictures/profile.jpg';
-    const cat =
-      'https://cdn.vox-cdn.com/thumbor/0A5RYJ7J5eW5wepSfIBR3KVmoSg=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13648705/olli_the_polite_cat.jpg';
 
     return (
-      <div id='header'>
+      <section id='header'>
         <div id='video-overlay'>
           <div id='profile-picture'>
             <Image circular centered size={'small'} src={profilePath} />
@@ -44,7 +42,7 @@ class MyHeader extends React.Component {
             <source src={vidPath} type='video/webm' />
           </video>
         </div>
-      </div>
+      </section>
     );
   }
 }
