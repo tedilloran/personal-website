@@ -81,6 +81,7 @@
 
 #scroll-arrow {
   margin-top: 10px;
+  width: 100%;
   text-align: center;
   text-shadow: 2px 2px rgba(66, 65, 65, 0.507);
   animation: scrollDown 2s ease-in-out alternate infinite;
@@ -135,6 +136,7 @@
   }
   #scroll-arrow {
     visibility: hidden;
+    width: 0;
   }
 }
 

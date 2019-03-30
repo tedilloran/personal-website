@@ -34,15 +34,15 @@ class MyHeader extends React.Component {
               </Button>
             </div>
           </div>
+          <div id='scroll-arrow'>
+            <Icon name='angle double down' inverted size={'huge'} />
+          </div>
         </div>
         <div id='video-container'>
           <video playsInline loop autoPlay muted style={{ width: '100%' }}>
             <source src={vidPath} type='video/mp4' />
             <source src={vidPath} type='video/webm' />
           </video>
-        </div>
-        <div id='scroll-arrow'>
-          <Icon name='angle double down' inverted size={'huge'} />
         </div>
       </div>
     );
