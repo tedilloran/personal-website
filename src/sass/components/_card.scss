@@ -1,0 +1,55 @@
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  height: 20rem;
+  background-color: $color-grey-dark;
+  width: 30rem;
+  padding: 2rem;
+  margin: 1rem;
+
+  &__heading {
+    position: relative;
+    height: 8rem;
+    width: 100%;
+  }
+
+  &__heading img {
+    display: inline-block;
+    height: 100%;
+  }
+
+  &__heading h4 {
+    display: inline-block;
+    margin-left: 2rem;
+    position: absolute;
+    top: 30%;
+  }
+
+  &__details {
+    display: block;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-grey-light-2;
+      background-color: $color-grey-dark;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: scale(1.3);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines 1 rem
+  font-size: 62.5%;
+}
+
+body {
+  /* Extends width and height to include the padding area  */
+  box-sizing: border-box;
+}
