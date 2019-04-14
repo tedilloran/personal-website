@@ -5,7 +5,7 @@ class PortfolioCard extends React.Component {
     return (
       <div className='card'>
         <div className='card__heading'>
-          <img src={this.props.img} />
+          <img alt={this.props.name} src={this.props.img} />
           <h4 className='heading-tertiary'>{this.props.name}</h4>
         </div>
         <div className='card__details'>
@@ -14,7 +14,9 @@ class PortfolioCard extends React.Component {
           </div>
         </div>
         <a className='card__link' target='_blank' rel='noopener noreferrer' href={this.props.git}>
-          &#x1F517; GitHub Repository
+          <span role='img' aria-label='chain'>
+            &#x1F517;
+          </span>GitHub Repository
         </a>
       </div>
     );

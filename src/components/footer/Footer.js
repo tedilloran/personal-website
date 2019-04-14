@@ -1,7 +1,5 @@
 import React from 'react';
 
-import ContactButton from './ContactButton';
-
 const Footer = () => {
   return (
     <footer className='footer'>
