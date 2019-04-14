@@ -19,5 +19,9 @@
     text-shadow: 0.2rem 0.2rem rgba(66, 65, 65, 0.507);
     animation: scrollDown 2s ease-in-out alternate infinite;
     font-size: 10rem;
+
+    @media print, screen and (max-width: 1200px) {
+      font-size: 5rem;
+    }
   }
 }
