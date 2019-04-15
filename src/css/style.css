@@ -241,7 +241,9 @@ body {
 
 .header {
   position: relative;
-  height: 95vh; }
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 87vh, 52.5% 87vh, 50% 95vh, 47.5% 87vh, 0 87vh);
+  background-color: rgba(161, 30, 30, 0.4); }
   .header__text-box {
     position: absolute;
     top: 60%;
@@ -251,6 +253,9 @@ body {
     transform: translate(-50%, -50%); }
   .header__picture {
     border-radius: 50rem; }
+    @media print, screen and (max-width: 1200px) {
+      .header__picture {
+        transform: scale(0.6); } }
   .header__scroll-arrow {
     text-shadow: 0.2rem 0.2rem rgba(66, 65, 65, 0.507);
     animation: scrollDown 2s ease-in-out alternate infinite;

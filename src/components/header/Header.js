@@ -12,6 +12,7 @@ class CustomHeader extends React.Component {
           <video className='bg-video__content' muted loop autoPlay>
             <source src={vidPath} type='video/mp4' />
             <source src={vidPath} type='video/webm' />
+            Your browser isn't supported!
           </video>
         </div>
         <div className='header__text-box'>
