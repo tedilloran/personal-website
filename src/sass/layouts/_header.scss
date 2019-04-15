@@ -1,8 +1,7 @@
 .header {
   position: relative;
   height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 87vh, 52.5% 87vh, 50% 95vh, 47.5% 87vh, 0 87vh);
-  background-color: rgba($color-primary, 0.4);
+
   &__text-box {
     position: absolute;
     top: 60%;
