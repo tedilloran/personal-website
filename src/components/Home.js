@@ -2,7 +2,6 @@ import React from 'react';
 import Portfolio from './portfolio/Portfolio';
 import Introduction from './introduction/Introduction';
 
-import '../css/style.css';
 
 const Home = () => {
   return (

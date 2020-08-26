@@ -1,16 +1,13 @@
 import React from 'react';
+import UnderConstruction from './components/UnderConstruction';
 
-import Home from './components/Home';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import './css/style.css';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Header />
-        <Home />
-        <Footer />
+      <div style={{ position: 'relative', height: '100vh', width: '100%' }}>
+        <UnderConstruction/>
       </div>
     );
   }

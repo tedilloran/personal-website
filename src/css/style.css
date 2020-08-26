@@ -42,6 +42,12 @@
   100% {
     transform: translateY(20px); } }
 
+@keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: #f7f7f7; } }
+
 *,
 *::before,
 *::after {
@@ -54,7 +60,8 @@ html {
 
 body {
   /* Extends width and height to include the padding area  */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #333; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -234,6 +241,12 @@ body {
     color: #a11e1e;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transform: scale(1.3); }
+
+.cursor {
+  font-weight: 100;
+  font-size: 5rem;
+  color: #f7f7f7;
+  animation: 2s blink step-end infinite; }
 
 .footer {
   background-color: #777;

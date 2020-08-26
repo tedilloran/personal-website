@@ -58,3 +58,12 @@
     transform: translateY(20px);
   }
 }
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: $color-grey-light-1;
+  }
+}
